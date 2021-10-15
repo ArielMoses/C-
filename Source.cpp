@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//זה עבור המשימה של חישוב היעילות של הרכב
 int main()
 {
 	float a;
