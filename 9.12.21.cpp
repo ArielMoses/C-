@@ -94,3 +94,27 @@ int main() {
 		cout << "There are two numbers that are equally close to the given number and they are: " << n << ", " << k;
 	}
 }
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	int num;
+	int isprime = 0;
+	cout << "Enter a number: ";
+	cin >> num;
+	for (int div = num - 1; div > 0; div--) {
+		if (num % div == 0) {
+			isprime = isprime + div;
+		}
+	}
+	if (num == isprime) {
+		cout << "Perfect: True";
+	}
+	else {
+		cout << "Perfect: False";
+	}
+}
